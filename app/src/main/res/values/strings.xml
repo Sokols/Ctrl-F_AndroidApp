@@ -5,4 +5,7 @@
     <string name="find">Find phrase</string>
     <string name="found">I\'ve found %d phrase matches</string>
     <string name="place">Place for text from clipboard…</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="first_copy">First copy your text from clipboard!</string>
 </resources>

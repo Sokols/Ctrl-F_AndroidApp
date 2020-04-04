@@ -16,22 +16,25 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="true"
-            android:padding="50dp"
+            android:padding="60dp"
             android:src="@drawable/ctrlf_logo_horizontal"
             tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:id="@+id/linearLayoutVertical"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageViewLogo"
             android:layout_centerHorizontal="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/buttonCopy"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:text="@string/copy" />
 
             <LinearLayout
@@ -65,10 +68,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/linearLayoutVertical"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="8dp"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/divider"
@@ -86,7 +91,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/divider"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="4dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="64dp"
             android:text="@string/place"
             android:textColor="@color/white"
             android:textSize="18sp" />
