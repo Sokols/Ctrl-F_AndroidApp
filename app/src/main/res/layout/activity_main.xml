@@ -96,7 +96,8 @@
             android:layout_marginRight="64dp"
             android:text="@string/place"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:paddingBottom="20dp"/>
 
     </RelativeLayout>
 </ScrollView>
