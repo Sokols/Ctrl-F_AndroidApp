@@ -1,30 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#000000">
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:adjustViewBounds="true"
-        android:padding="50dp"
-        android:src="@drawable/ctrlf_logo_horizontal"
-        tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:padding="50dp"
+            android:src="@drawable/ctrlf_logo_horizontal"
+            tools:ignore="ContentDescription" />
 
-    <Button
-        android:id="@+id/buttonCopy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewLogo"
+        <LinearLayout
+            android:id="@+id/linearLayoutVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewLogo"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
 
-        android:layout_centerHorizontal="true"
-        android:text="Button" />
+            <Button
+                android:id="@+id/buttonCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copy" />
 
-</RelativeLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonFind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/find"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/buttonReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reset"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPhrases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutVertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/divider"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textViewPhrases"
+            android:background="@color/yellow"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dip" />
+
+        <TextView
+            android:id="@+id/textViewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="@string/place"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ctrl + F</string>
+    <string name="copy">Copy text from clipboard</string>
+    <string name="reset">Reset</string>
+    <string name="find">Find phrase</string>
+    <string name="found">I\'ve found %d phrase matches</string>
+    <string name="place">Place for text from clipboard…</string>
 </resources>
